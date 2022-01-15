@@ -1,0 +1,13 @@
+*AE01.15.00.020_sim01.net
+.inc ..\AE01.15.00.020.cir
+.step param R 100 200 50
+.param RM=R/2
+.step param C 10n 20n 5n
+.param CM=C*2
+.param FC=1/(2*pi*{R}*{C})
+.meas FC_mag min mag(V(/out))
+.meas FC_frec find frequency when FC_mag=mag(V(/out))
+.meas FC_mag_frec find mag(V(/out)) when frequency=FC_frec
+.ac dec 100 1 100MEG
+.options plotwinsize=0
+.options numdgt=7

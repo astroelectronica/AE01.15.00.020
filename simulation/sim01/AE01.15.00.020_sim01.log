@@ -1,0 +1,65 @@
+Circuit: *AE01.15.00.020_sim01.net
+
+.step r=100 c=1e-008
+.step r=150 c=1e-008
+.step r=200 c=1e-008
+.step r=100 c=1.5e-008
+.step r=150 c=1.5e-008
+.step r=200 c=1.5e-008
+.step r=100 c=2e-008
+.step r=150 c=2e-008
+.step r=200 c=2e-008
+
+
+Measurement: fc_mag
+  step	MIN(mag(v(/out)))	FROM	TO
+     1	(-53.5742dB,0°)	1	1e+008
+     2	(-46.1654dB,0°)	1	1e+008
+     3	(-60.8222dB,0°)	1	1e+008
+     4	(-46.1654dB,0°)	1	1e+008
+     5	(-67.5928dB,0°)	1	1e+008
+     6	(-45.3364dB,0°)	1	1e+008
+     7	(-60.8222dB,0°)	1	1e+008
+     8	(-45.3364dB,0°)	1	1e+008
+     9	(-71.1771dB,0°)	1	1e+008
+
+Measurement: fc_frec
+  step	frequency	at
+     1	(104dB,0°)	158489
+     2	(100.6dB,0°)	107152
+     3	(98dB,0°)	79432.8
+     4	(100.6dB,0°)	107152
+     5	(97dB,0°)	70794.6
+     6	(94.4dB,0°)	52480.7
+     7	(98dB,0°)	79432.8
+     8	(94.4dB,0°)	52480.7
+     9	(92dB,0°)	39810.7
+
+Measurement: fc_mag_frec
+  step	mag(v(/out))	at
+     1	(-53.5742dB,0°)	158489
+     2	(-46.1654dB,0°)	107152
+     3	(-60.8222dB,0°)	79432.8
+     4	(-46.1654dB,0°)	107152
+     5	(-67.5928dB,0°)	70794.6
+     6	(-45.3364dB,0°)	52480.7
+     7	(-60.8222dB,0°)	79432.8
+     8	(-45.3364dB,0°)	52480.7
+     9	(-71.1771dB,0°)	39810.7
+
+
+Date: Sat Jan 15 12:02:59 2022
+Total elapsed time: 0.184 seconds.
+
+tnom = 27
+temp = 27
+method = trap
+totiter = 0
+traniter = 0
+tranpoints = 0
+accept = 0
+rejected = 0
+matrix size = 5
+fillins = 2
+solver = Normal
+
